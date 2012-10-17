@@ -67,6 +67,8 @@ class PostAdmin extends Admin
                 ))
                 ->add('rawContent')
 				->add('image', 'sonata_type_model', array('label' => 'Photo'), array('edit' => 'list'))
+				->add('embed', 'textarea', array('label' => 'Embed Video 1'))
+                ->add('embed2', 'textarea', array('label' => 'Embed Video 2'))
             ->end()
             ->with('Tags')
                 ->add('tags', 'sonata_type_model', array('expanded' => true))
