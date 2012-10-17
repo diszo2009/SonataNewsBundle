@@ -66,6 +66,7 @@ class PostAdmin extends Admin
                     'target' => 'content'
                 ))
                 ->add('rawContent')
+				->add('image', 'sonata_type_model', array('label' => 'Photo'), array('edit' => 'list'))
             ->end()
             ->with('Tags')
                 ->add('tags', 'sonata_type_model', array('expanded' => true))
